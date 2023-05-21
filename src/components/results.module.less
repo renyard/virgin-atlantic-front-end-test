@@ -1,0 +1,41 @@
+@import (reference) "../less/styled-components.include.less";
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  clear: both;
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  background: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px gray;
+
+  @media (min-width: @screen-sm-min) {
+    flex-wrap: nowrap;
+  }
+}
+
+.img {
+  box-shadow: 0 0 2px black;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.details {
+  margin-left: 10px;
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.ppp {
+  margin-top: 10px;
+  abbr {
+    text-decoration: none;
+  }
+}
